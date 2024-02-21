@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+</head>
+<body>
+    <h1>Diabetes Prediction</h1>
+    <form action="/submit" method="post">
+        <label for="HighBP">Do you have High blood pressure?</label>
+        <select id="HighBP" name="HighBP">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="HighChol">Do you have high cholesterol?</label>
+        <select id="HighChol" name="HighChol">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="CholCheck">Have you had your cholesterol checked?</label>
+        <select id="CholCheck" name="CholCheck">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="BMI">What's your BMI?</label>
+        <input type="number" id="BMI" name="BMI" min="10" step="any" required><br>
+
+        <label for="Smoker">Are you a smoker?</label>
+        <select id="Smoker" name="Smoker">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="Stroke">Ever had a stroke?</label>
+        <select id="Stroke" name="Stroke">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="MI_CHD">Ever had Coronary Heart Disease(CHD) or Myocardial Infarction (MI)?</label>
+        <select id="MI_CHD" name="MI_CHD">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="PhysActivity">Are you physically active?</label>
+        <select id="PhysActivity" name="PhysActivity">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="Veggies">Do you consume vegetables?</label>
+        <select id="Veggies" name="Veggies">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="HvyAlcoholConsump">Do you have heavy alcohol consumption?</label>
+        <select id="HvyAlcoholConsump" name="HvyAlcoholConsump">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="GenHlth">Would you say that in general your health is?</label>
+        <select id="GenHlth" name="GenHlth">
+            <option value="1">Excellent</option>
+            <option value="2">Very good</option>
+            <option value="3">Good</option>
+            <option value="4">Fair</option>
+            <option value="5">Poor</option>
+        </select><br>
+
+        <label for="MentHlth">For how many days during the past 30 days was your mental health not good?</label>
+        <input type="number" id="MentHlth" name="MentHlth" min="0" max="30" required><br>
+
+        <label for="PhysHlth">for how many days during the past 30 days was your physical health not good?</label>
+        <input type="number" id="PhysHlth" name="PhysHlth" min="0" max="30" required><br>
+
+        <label for="DiffWalk">Do you have serious difficulty walking or climbing stairs?</label>
+        <select id="DiffWalk" name="DiffWalk">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="Sex">What's your gender?</label>
+        <select id="Sex" name="Sex">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br>
+
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" min="0" max="100" required><br>
+
+        <label for="Education">What is the highest grade or year of school you completed?</label>
+        <select id="Education" name="Education">
+            <option value="1">Never attended school or only kindergarten</option>
+            <option value="2">Grades 1 through 8 (Elementary)</option>
+            <option value="3">Grades 9 through 11 (Some high school)</option>
+            <option value="4">Grade 12 or GED (High school graduate)</option>
+            <option value="5">College 1 year to 3 years (Some college or technical school)</option>
+            <option value="6">College 4 years or more (College graduate)</option>
+        </select><br>
+
+        <label for="Income">Income Level:</label>
+        <select id="Income" name="Income">
+            <option value="1">Less than $10,000</option>
+            <option value="2">Less than $15,000</option>
+            <option value="3">Less than $20,000</option>
+            <option value="4">Less than $25,000</option>
+            <option value="5">Less than $35,000</option>
+            <option value="6">Less than $50,000</option>
+            <option value="7">Less than $75,000</option>
+            <option value="8">$75,000 or more</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
